@@ -16,13 +16,13 @@ const router = createRouter({
             component: HomePage,
         },
         {
-            path: '/about-us',
-            name: 'AboutUs',
+            path: '/about',
+            name: 'about',
             component: AboutUs,
         },
         {
             path: '/contact-us',
-            name: 'ContactUs',
+            name: 'contact',
             component: ContactUs,
         },
         {
@@ -31,13 +31,13 @@ const router = createRouter({
             component: NotFound,
         },
         {
-            path: '/project-list',
-            name: 'ProjectList',
+            path: '/projects',
+            name: 'projects',
             component: ProjectList,
         },
         {
             path: '/projects/:slug',
-            name: 'SingleProject',
+            name: 'single-project',
             component: SingleProject,
         },
 
