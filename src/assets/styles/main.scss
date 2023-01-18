@@ -13,8 +13,6 @@ $main-font: 'Montserrat', sans-serif;
 
 @import 'bootstrap/scss/bootstrap';
 
-
-
-body{
-    background-color: $bg-color;
+.route-link-active, .active{
+    color: #ff0000 !important;
 }

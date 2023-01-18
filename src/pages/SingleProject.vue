@@ -1,12 +1,23 @@
 <template>
-    <div>
-        Sono Single Project
-    </div>
+    <section>
+    <h1></h1>
+    </section>
 </template>
 
 <script>
+    import axios from 'axios';
+    import {store} from '../store';
     export default {
-        name: 'SingleProject'
+        name: 'SingleProject',
+        data(){
+            return{
+            store,
+            project: null,
+            } 
+        }, 
+        method:{
+            
+        }
     }
 </script>
 
