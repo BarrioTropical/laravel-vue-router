@@ -16,7 +16,13 @@
                 </div>
             </div>
             </div>
-            
+            <nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item" v-for="n in LastPage"><a class="page-link" @click="getProjects(n)">{{ n }}</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
         </section>
     </div>
 </template>
@@ -30,14 +36,21 @@
             return {
                 store,
                 projects: [],
+                currentPage: 1,
+                LastPage: null,
                 contentMaxLen: 100,
             }
         },
         methods:{
-            getProjects(){
-                axios.get(`${this.store.apiBaseUrl}/projects`).then((response)=>{
+            getProjects(pagenum){
+                axios.get(`${this.store.apiBaseUrl}/projects`, {params:{
+                    page: pagenum
+                }}).then((response)=>{
                     console.log(response.data.results);
                     this.projects = response.data.results.data;
+                    this.currentPage = response.data.results.current_page;
+                    this.lastPage = response.data.results.last_page;
+                    this.total = response.data.results.total;
                 })
             },
             truncateContent(text){
@@ -47,7 +60,7 @@
             },
         },
         mounted(){
-            this.getProjects();
+            this.getProjects(1);
         },
     }
 </script>
