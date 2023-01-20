@@ -1,7 +1,7 @@
 <template>
 <!-- ======= Hero Section ======= -->
-<div class="bt-jumbotron mb-3">
-  <h1 class="display-4">agencia de marketing digital</h1>
+<div class="bt-jumbotron mb-3 mt-3 align-middle">
+  <h1 class="line-1 anim-typewriter display-4">agencia de marketing digital</h1>
   <p class="lead text-uppercase"> Somos tu estudio creativo de web, diseño y marketing</p>
   <p class="lead">
     <a class="bt-btn" href="/contact-us" role="button">Contáctanos</a>
