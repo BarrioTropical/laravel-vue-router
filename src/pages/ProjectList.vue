@@ -1,27 +1,27 @@
 <template>
     <div>
         <section>
-            <h1>Lista dei post</h1>
+            <h1>Proyectos hechos con ♡</h1>
             <div class="row">
             <div class="col-12 col-md-4" v-for="(project, index) in projects" :key="index">
                 <div class="card" style="width: 18rem;">
                 <img :src="`{{ store.imageBasePath }}$(project.cover_image)`" class="card-img-top" :alt="project.title">
                  <div class="card-body">
                 <h5 class="card-title">{{project.title}}</h5>
-                <p class="card-text">{{ truncateContent(project.content)}}</p>
-                <router-link class="btn btn-primary" :to="{name: 'single-project', params:{slug: project.slug}}">
-                    Vedi i progetti
+                <!--<p class="card-text">{{ truncateContent(project.content)}}</p>-->
+                <router-link class="bt-btn" :to="{name: 'single-project', params:{slug: project.slug}}">
+                    Ver más
                 </router-link>
                 </div>
                 </div>
             </div>
             </div>
             <nav aria-label="Page navigation example">
-  <ul class="pagination">
+  <!--<ul class="pagination">
     <li class="page-item"><a class="page-link" href="#">Previous</a></li>
     <li class="page-item" v-for="n in LastPage"><a class="page-link" @click="getProjects(n)">{{ n }}</a></li>
     <li class="page-item"><a class="page-link" href="#">Next</a></li>
-  </ul>
+  </ul>-->
 </nav>
         </section>
     </div>

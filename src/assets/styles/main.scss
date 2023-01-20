@@ -1,6 +1,7 @@
 //Colors
-$bg-color: #333;
+$bg-color: #0F0F0F;
 $text-color: #fefefe;
+$light-grey: #222222;
 
 //Typography
 $main-font: 'Montserrat', sans-serif;
@@ -14,5 +15,26 @@ $main-font: 'Montserrat', sans-serif;
 @import 'bootstrap/scss/bootstrap';
 
 .route-link-active, .active{
-    color: #ff0000 !important;
+    color: #162E25 !important;
 }
+
+body{
+    background-color: $bg-color;
+    color: $text-color;
+}
+
+
+
+
+
+//Project Section
+.card{
+    background-color: $light-grey;
+    color: $text-color;
+}
+
+.bt-btn{
+    color: $text-color;
+    text-decoration: none;
+}
+
