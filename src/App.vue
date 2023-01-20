@@ -14,7 +14,7 @@ import AppFooter from './components/FooterComponent.vue';
 
 <template>
   <AppHeader></AppHeader>
-  <main class="container">
+  <main class="container-fluid">
     <router-view></router-view>
   </main>
   <AppFooter></AppFooter>

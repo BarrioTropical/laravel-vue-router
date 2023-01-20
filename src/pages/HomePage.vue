@@ -31,7 +31,7 @@
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
-        <img src="../assets/img/About-1.jpg" alt="Quienes somos">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7KRpSbeaQLw?controls=0" title="Barrio Tropical Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
       <div class="col-xl-5 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
         <h3 class="cormorant">Quienes somos</h3>
@@ -56,7 +56,7 @@
 <!-- ======= Project Section ======= -->
 <section id="service" class="service p-3 container">
   <div class="container-fluid">
-    <p class="text-center">Aqui lo servicios</p>
+    <p class="text-center">Aqui los projectos</p>
   </div>
 </section>
 <!-- End Project Section -->
