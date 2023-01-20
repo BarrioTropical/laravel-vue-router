@@ -2,9 +2,9 @@
     <section class="contact_me py-5">
         <div class="inner-wrapper">
             <div class="container-fluid text-center">
-                <h2 class="text-uppercase">Contacta con nosotros</h2>                
+                <h2 class="p-3 cormorant">Contacta con nosotros</h2>                
                 <div class="row">
-                    <form class="col-12 text-start" @submit.prevent="sendForm()">
+                    <form class="col-12 text-start bt-contact" @submit.prevent="sendForm()">
                         <div class="mb-3">
                             <input class="border-0 border-bottom form-control" 
                                 type="text" name="name" id="name" placeholder="nombre y apellidos" v-model="name" :class="{'is-invalid': errors.name}" required>
